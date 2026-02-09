@@ -5,16 +5,12 @@
   "author": "Fynn Withake",
   "description": "always enables page navigation",
   "homepage_url": "https://forum.checkmk.com/u/fynn",
-  "icons": {
-    "16": "icon.png",
-    "32": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
-  },
+  "permissions": ["storage"],
   "action": {
+    "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
-  "permissions": [],
+  "icons": { "128": "icon.png" },
   "content_scripts": [
     {
       "matches": ["*://*/*/check_mk/*"],
