@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Checkmk Navigation",
+  "version": "1.1",
+  "author": "Fynn Withake",
+  "description": "always enables page navigation",
+  "homepage_url": "https://forum.checkmk.com/u/fynn",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*/check_mk/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
